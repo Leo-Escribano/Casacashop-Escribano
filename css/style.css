@@ -1,0 +1,515 @@
+/* Tipografía fira sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
+/* Selector universal */
+
+*{
+    font-family: 'Fira Sans bold', sans-serif; 
+    padding: 0px;
+    margin: 0px;
+}
+
+    /* selectores de etiqueta*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: white;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: #ffffff;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+    nav img{
+        width: 200px;
+    }
+
+    nav ul{
+        display:flex
+    }
+
+        nav ul li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(17, 14, 14);
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+header{
+    text-align: center;
+}
+
+header img{
+    margin-top: 10px;
+    width: 96%;
+    height: 350px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-size: 18px;;
+    text-align: center;
+}
+
+section iframe{
+    width: 100%
+}
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    position: absolute bottom;
+    width: 100%;
+}
+
+/* Selector ID */
+
+#textFooter{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 20px 50px;
+}
+
+#titleCatalogo{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+
+/* Selectores de clases*/
+
+.textBold{
+    font-weight: 600px;
+    font-size: medium;
+}   
+
+.textRegular{
+    font-weight: 400;
+}   
+
+.textCenter{
+    text-align: center;
+}   
+
+.textLeft{
+    text-align: left;
+}  
+
+.textRight{
+    text-align: right;
+}  
+
+.bgDark{
+    background-color: black;
+}  
+
+.textWhite{
+    color: #ffffff;
+} 
+
+.textDark
+{
+    color: #000;
+}
+
+.boxEncabezado{
+    background-color:black;
+    margin: auto;
+    padding: 15px;
+    border: solid 2px #027333;
+}
+
+.boxH1{
+    background: linear-gradient(to bottom, black, rgb(52, 52, 52));;
+    padding-bottom: 15px;
+    border: solid 2px #027333;
+}
+
+.justifyContent{
+    justify-content: space-between;
+}
+
+.solidBorder{
+border: solid 2px #027333;
+}
+
+.marginTop{
+    margin-top: 30px;
+    }
+
+.marginBottom{
+    margin-bottom: 30px;
+    padding-top: 5px;
+    text-align: center;
+    }
+
+.marginLeft{
+    margin-left: 600px;
+    }
+
+
+
+.greyBground{
+    background-color: rgba(71, 75, 73, 0.241);
+    }
+
+.iconSize{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.boxFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.contactFont{
+    font-family: 'Fira Sans bold', sans-serif; 
+    font-size: 20px;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+.SubmitClick{
+    height: 20px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+
+/* CONTENEDOR INDEX */
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+/* CONTENEDOR CONTACTO */
+.contenedorGrid-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+
+/* CONTENEDOR CATALOGO-MUJERES-NIÑOS RETRO-OP-LANZAMIENTOS */
+.contenedorGrid-cmn{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+
+/* GRID AREAS */
+#mainNav{
+    grid-area: nav;
+
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* clases página CONTACTO */
+
+.imgSize
+{
+    width: 80%;
+}
+
+.bodyContact
+{
+    background: white;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.containerContact {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.textContact{
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 10px 0 #027333;
+}
+
+.contact-wrapper > {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+    font-size: 15px;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 70%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 2px solid #d63031;
+}
+
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 30%;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.titleTable{
+    font-size: 20px;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.tableFont{
+    font-family: 'Fira Sans bold', sans-serif; 
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    width: 99%;
+    margin-left: 5px;
+}
+
+.contactTitle
+{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* clases para galerías (mujeres, niños, op-lanzamientos-retro */
+.containerMujeres{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tituloMujeres
+{
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.caja img{
+    width: 320px;
+    height: 330px;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.caja p{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.caja{
+    margin: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.textDeco{
+    text-decoration: none;
+}
+
+
+/*transiciones y transformaciones*/
+
+.gradiente{
+    background: linear-gradient(to top, black, rgb(52, 52, 52));
+}
+
+.transformacion:hover{
+    transform: translate(-5px, 5px);
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+.transformacion2:hover{
+    transform: translate(-10px, 10px);
+    cursor: grab;
+    transition-duration: 3s;
+}
+
+/* Animaciones */
+@keyframes textAlpha{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+li{
+    animation-name: textAlpha;
+    animation-duration: 4s;
+}
+
+.logoAnimado{
+    animation-name: textAlpha;
+    animation-duration: 4s;
+}
+
+nav ul li a{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+		}
+
+		nav ul li a:hover{
+			color: black;
+			font-weight: 600;
+			background-size: 100% 2px;
+		}
+
+/* MEDIA QUERIE PARA HACER SITIO RESPONSIVE (USÉ MOBILE FIRST) */
+
+@media only screen and (min-width: 768px){
+    .contenedorGrid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+    
+    
+    .imgSize
+    {
+        width: 30%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: static;
+        padding: 4px 30px;
+        height: 65px;
+    }
+    
+    .contactBody {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+    }
+}
+
