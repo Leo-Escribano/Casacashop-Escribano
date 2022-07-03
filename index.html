@@ -5,45 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
     <title>Camisetas oficiales de equipos de fútbol</title>
     <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Bootstrap CCS - bootstrap.min.css -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- MI CSS -->
+
     <link rel="stylesheet" href="css/style.css" />
+
   </head>
 
-  <body class="contenedorGrid">
-    <nav class="nav" id="mainNav">
-      <a href="index.html">
-        <img class="logoAnimado" src="img/logo.jpg" alt="logo de CASACASHOP" />
-      </a>
-      <ul>
-        <li>
-          <a href="views/catalogo.html">CATÁLOGO</a>
-        </li>
-        <li>
-          <a href="views/mujeres.html">MUJERES</a>
-        </li>
-        <li>
-          <a href="views/ninos.html">NIÑOS</a>
-        </li>
-        <li>
-          <a href="views/contacto.html">CONTACTO</a>
-        </li>
-      </ul>
+  <body>
+
+    <!-- NAV BAR - INICIO -->
+
+    <nav class="navbar navbar-expand-md" id="botonera">
+      <div class="container-fluid" id="font-nav">
+        <a class="navbar-brand" href="index.html"><img class="" src="img/logo.jpg" alt="logo de CASACASHOP" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="views/catalogo.html">CATÁLOGO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="views/mujeres.html">MUJERES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="views/ninos.html">NIÑOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="views/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          <form class="d-flex me-auto" role="search">
+            <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+          </form>
+        </div>
+      </div>
     </nav>
 
-    <header class="header">
+    <!-- CIERRA NAV BAR -->
+
+    <header>
       
-    <div class="textCenter">
-      <p class="boxEncabezado textBold textWhite">
+    <div class="card border border-success rounded-2">
+      <p class="card-header bg-black text-white text-center border border-success rounded-2">
         ENVÍOS GRATIS A TODO EL PAÍS A PARTIR DE $9.999 - 3,6 y 12 CUOTAS SIN
         INTERÉS
       </p>
     </div>
 
-      <img
-        src="img/header-index.png"
-        alt="camisetas de selecciones nacionales"
-      />
-      <div class="boxH1">
-        <h1>
+    <!-- INICIA CAROUSEL-->
+    <div  id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/camisetas-header-2.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/header-index.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/camisetas-header-3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      </button>
+    </div> 
+      <!-- TERMINA CAROUSEL -->
+
+      <div class="card">
+        <h1 class="card-header bg-black text-white text-center border border-success rounded-2">
           TENEMOS LAS MEJORES CAMISETAS DE FÚTBOL, TANTO DE SELECCIONES COMO DE
           EQUIPOS DE DIFERENTES PAÍSES.
         </h1>
@@ -52,15 +92,27 @@
 
     <!-- fin del header -->
 
-    <main class="main">
-      <div class="marginBottom">
-        <a href="views/lanzamientos.html"><img class="solidBorder imgSize logoAnimado" src="img/ultimos-lanzamientos.png" alt="últimos lanzamientos"/></a>
-        <a href="views/retro.html"><img class="solidBorder imgSize logoAnimado" src="img/camisetas-clasicas-retro.png" alt="camisetas retro y clásicas"/></a>
-        <a href="views/oportunidades.html"><img class="solidBorder imgSize logoAnimado" src="img/oportunidades.png" alt="oportunidades"/></a>
+    <!-- INICIA TRES SECCIONES MAIN -->
+
+    <main>
+      <div class="card-group">
+        <div class="card m-3 rounded-5 border border-3 border-success">
+          <a href="views/lanzamientos.html"><img src="img/ultimos-lanzamientos.png" class="card-img rounded-5" alt="ultimos lanzamientos"></a>
+        </div>
+        <div class="card m-3 rounded-5 border border-3 border-success">
+          <a href="views/retro.html"><img src="img/camisetas-clasicas-retro.png" class="card-img rounded-5" alt="camisetas retro"></a>
+        </div>
+        <div class="card m-3 rounded-5 border border-3 border-success">
+          <a href="views/oportunidades.html"><img src="img/oportunidades.png" class="card-img rounded-5" alt="oportunidades"></a>
+        </div>
       </div>
 
+      <!-- FIN TRES SECCIONES MAIN -->
+
+      <!-- INICIA MAP -->
+
       <section>
-        <iframe 
+        <iframe class="img-fluid rounded mx-auto d-block"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13124.740011564898!2d-58.3673878!3d-34.67528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x438c219aee66c1bb!2sAlto%20Avellaneda%20Shopping!5e0!3m2!1ses-419!2sar!4v1653772488468!5m2!1ses-419!2sar"
           width="1200"
           height="450"
@@ -71,23 +123,30 @@
         >
         </iframe>
       </section>
+
+    <!-- FIN MAP-->
+
     </main>
 
-    <footer class="footer bgDark marginTop boxFooter">
-      <div>
-      <a class="textDeco" href="https://facebook.com" target="_blank">
-        <img class="iconSize" class="iconSize" src="img/logo-facebook.png" alt="logotipo de facebook" />
+    <footer class="mt-5 py-3 bg-black text-center text-white container-fluid">
+      <div class="mb-3">
+      <a class="text-deco" href="https://facebook.com" target="_blank">
+        <img id="redes" src="img/logo-facebook.png" alt="logotipo de facebook" />
       </a>
-    <a href="https://instagram.com" target="_blank">
-        <img class="iconSize" src="img/logo-insta.png" alt="logotipo de instagram" />
+      <a id="redes" href="https://instagram.com" target="_blank">
+        <img id="redes" src="img/logo-insta.png" alt="logotipo de instagram" />
       </a>
       </div>
-
-      <h6 class="textWhite" id="textFooter">
+      
+      <h6 class="text-white">
         GRAL. GÜEMES 897 (ALTO AVELLANEDA) - LOCAL 10 - LUNES A VIERNES DE 10 A
         20 HORAS. TEL:4222-2222
       </h6>
+      
+      </footer>
 
-    </footer>
+    <!-- JS - bootstrap.min.js -->
+<script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

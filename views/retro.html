@@ -1,66 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>Camisetas oficiales de equipos de fútbol</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
 
-    <head> 
-        <meta charset="UTF-8">  
-        <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
-        <title>Camisetas oficiales de equipos de fútbol</title>
-        <link rel="shortcut icon" href="../img/favicon.png">
-        <link rel="stylesheet" href="../css/style.css"/>
-    </head>
+    <!-- Bootstrap CCS - bootstrap.min.css -->
 
-    <body class="contenedorGrid-cmn">
-        <nav id="mainNav">
-            <a href="../index.html">
-                <img class="logoAnimado" src="../img/logo.jpg" alt="logo de CASACASHOP">
-            </a>
-            <ul>
-                <li>
-                    <a href="catalogo.html">CATÁLOGO</a>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- MI CSS -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- NAV BAR - INICIO -->
+
+    <nav class="navbar navbar-expand-md" id="botonera">
+        <div class="container-fluid" id="font-nav">
+            <a class="navbar-brand" href="../index.html"><img class="" src="../img/logo.jpg" alt="logo de CASACASHOP" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../views/catalogo.html">CATÁLOGO</a>
                 </li>
-                <li>
-                    <a href="mujeres.html">MUJERES</a>
+                <li class="nav-item">
+                <a class="nav-link text-black" href="../views/mujeres.html">MUJERES</a>
                 </li>
-                <li>
-                    <a href="ninos.html">NIÑOS</a>
+                <li class="nav-item">
+                <a class="nav-link text-black" href="../views/ninos.html">NIÑOS</a>
                 </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
+                <li class="nav-item">
+                <a class="nav-link text-black" href="../views/contacto.html">CONTACTO</a>
                 </li>
             </ul>
+            <form class="d-flex me-auto" role="search">
+                <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+            </form>
+            </div>
+        </div>
         </nav>
     
-    <header class="header">
-        <div class="textCenter">
-            <p class="boxEncabezado textBold textWhite bgDark"> ENVÍOS GRATIS A TODO EL PAÍS A PARTIR DE $9.999 - 3,6 y 12 CUOTAS SIN INTERÉS</p>
+        <!-- CIERRA NAV BAR -->
+
+    <header>
+    
+        <div class="card border border-success rounded-2">
+        <p class="card-header bg-black text-white text-center border border-success rounded-2">
+            ENVÍOS GRATIS A TODO EL PAÍS A PARTIR DE $9.999 - 3,6 y 12 CUOTAS SIN
+            INTERÉS
+        </p>
         </div>
     </header>
 
-    <main class="main gradiente marginTop">
-        <div class="tituloMujeres textWhite">CAMISETAS RETRO-CLÁSICAS</div>
-        <div class="containerMujeres textWhite">
-            <div class="caja caja1"> <img src="../img/pbajos-retro.jpg" alt="camiseta holanda 1994"><p class="marginTop">SELECCIÓN DE PAÍSES BAJOS (1994)</p><p>PRECIO: $12.999</p></div>
-            <div class="caja caja2"> <img src="../img/indep-retro.png" alt="camiseta independiente bochini"><p class="marginTop">INDEPENDIENTE (1984)</p><p>PRECIO: $9.999</p></div>
-            <div class="caja caja3"> <img src="../img/napoli-retro.jpg" alt="camiseta napoli maradona"><p class="marginTop">NAPOLI (1988)</p><p>PRECIO: $7.999</p></div>
-            <div class="caja caja4"> <img src="../img/fiore-retro.jpg" alt="camiseta fiorentina retro"><p class="marginTop">FIORENTINA (1998)</p><p>PRECIO: $9.999</p></div>
-            <div class="caja caja5"> <img src="../img/arg-retro.jpg" alt="camiseta retro argentina"><p class="marginTop">SELECCIÓN ARGENTINA (1978)</p><p>PRECIO: $12.999</p></div>
-            <div class="caja caja6"> <img src="../img/brasil-retro.jpg" alt="camiseta retro inglaterra"><p class="marginTop"> SELECCIÓN DE INGLATERRA (1992)</p><p>PRECIO: $9.999</p></div>
-        </div>
+    <main class="bg-dark mt-2">
+        <div class="text-center text-white p-4" id="font-titles">CAMISETAS CLÁSICAS RETRO</div>
+        <div class="row m-3">
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/pbajos-retro.jpg" alt="camiseta retro países bajos"><p class="mt-2 text-white text-center">SELECCIÓN HOLANDA 1994</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/arg-retro.jpg" alt="camiseta retro argentina"><p class="mt-2 text-white text-center">SELECCIÓN ARGENTINA 1978</p><p class="mt-2 text-white text-center">PRECIO: $15.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/chelsea-retro.jpg" alt="camiseta retro chelsea"><p class="mt-2 text-white text-center">CHELSEA 1996-97</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5 " src="../img/indep-retro.png" alt="camiseta retro bochini"><p class="mt-2 text-white text-center">INDEPENDIENTE 1984</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/fiore-retro.jpg" alt="camiseta retro batistuta"><p class="mt-2 text-white text-center">FIORENTINA 1998</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/ingla-retro.jpg" alt="camiseta retro inglaterra"><p class="mt-2 text-white text-center">SELECCIÓN INGLATERRA 1992</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/napoli-retro.jpg" alt="camiseta retro maradona"><p class="mt-2 text-white text-center">NAPOLI 1988</p><p class="mt-2 text-white text-center">PRECIO: $5.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/unionsov-retro.jpg" alt="camiseta retro cccp"><p class="mt-2 text-white text-center">SELECCIÓN UNIÓN SOVIÉTICA 1982</p><p class="mt-2 text-white text-center">PRECIO: $11.999</p></article>
+
+    
+        </article>
+    </div>
+
     </main>
 
-    <footer class="footer bgDark marginTop boxFooter">
-        <div>
-        <a  class="textDeco" href="https://facebook.com" target="_blank">
-        <img class="iconSize" class="iconSize" src="../img/logo-facebook.png" alt="logotipo de facebook" />
+    <footer class="py-3 bg-black text-center text-white container-fluid">
+        <div class="mb-3">
+        <a class="text-deco" href="https://facebook.com" target="_blank">
+        <img id="redes" src="../img/logo-facebook.png" alt="logotipo de facebook" />
         </a>
-        <a href="https://instagram.com" target="_blank">
-        <img class="iconSize" src="../img/logo-insta.png" alt="logotipo de instagram" />
+        <a id="redes" href="https://instagram.com" target="_blank">
+        <img id="redes" src="../img/logo-insta.png" alt="logotipo de instagram" />
         </a>
         </div>
-
-        <h6 class="textWhite" id="textFooter"> GRAL. GÜEMES 897 (ALTO AVELLANEDA) - LOCAL 10 - LUNES A VIERNES DE 10 A 20 HORAS. TEL:4222-2222
+        
+        <h6 class="text-white">
+        GRAL. GÜEMES 897 (ALTO AVELLANEDA) - LOCAL 10 - LUNES A VIERNES DE 10 A
+        20 HORAS. TEL:4222-2222
         </h6>
-    </footer>
-    
-</body>
+        
+        </footer>
+
+<!-- JS - bootstrap.min.js -->
+<script src="../js/bootstrap.min.js"></script>
+
+    </body>
 </html>
+    

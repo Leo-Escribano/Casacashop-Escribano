@@ -1,96 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>Camisetas oficiales de equipos de fútbol</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+
+    <!-- Bootstrap CCS - bootstrap.min.css -->
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- MI CSS -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- NAV BAR - INICIO -->
+
+    <nav class="navbar navbar-expand-md" id="botonera">
+    <div class="container-fluid" id="font-nav">
+        <a class="navbar-brand" href="../index.html"><img class="" src="../img/logo.jpg" alt="logo de CASACASHOP" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../views/catalogo.html">CATÁLOGO</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black" href="../views/mujeres.html">MUJERES</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black" href="../views/ninos.html">NIÑOS</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black" href="../views/contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+        <form class="d-flex me-auto" role="search">
+            <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
+        </div>
+    </div>
+    </nav>
+
+    <!-- CIERRA NAV BAR -->
+
+    <header>
     
-    <head> 
-        <meta charset="UTF-8">  
-        <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
-        <title>Camisetas oficiales de equipos de fútbol</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="shortcut icon" href="../img/favicon.png">
-        <link rel="stylesheet" href="../css/style.css"/>
-    </head>
+        <div class="card border border-success rounded-2">
+        <p class="card-header bg-black text-white text-center border border-success rounded-2">
+            ENVÍOS GRATIS A TODO EL PAÍS A PARTIR DE $9.999 - 3,6 y 12 CUOTAS SIN
+            INTERÉS
+        </p>
+        </div>
+    </header>
+        
+    <main class="bg-light">
+        <div class="text-center text-dark p-4 mb-3" id="font-titles">CONTACTO</div>
+    <div class="row mx-5 mb-5 border border-3 border-dark rounded-3 p-4">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+            <input type="text" class="form-control border border-1 border-dark rounded-1" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
+            <input type="email" class="form-control border border-1 border-dark rounded-1" placeholder="nombre@mail.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+            <textarea class="form-control border border-1 border-dark rounded-1" rows="3"></textarea>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-outline-success" type="submit">Enviar</button>
+        </div>
+    </div>
 
-    <body class="contenedorGrid-contacto bodyContact">
+    </main>
 
-        <nav id="mainNav">
-            <a href="../index.html">
-                <img class="logoAnimado" src="../img/logo.jpg" alt="logo de CASACASHOP">
-            </a>
-            <ul>
-                <li>
-                    <a href="catalogo.html">CATÁLOGO</a>
-                </li>
-                <li>
-                    <a href="mujeres.html">MUJERES</a>
-                </li>
-                <li>
-                    <a href="ninos.html">NIÑOS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="textCenter">
-            <p class="boxEncabezado textBold textWhite bgDark"> ENVÍOS GRATIS A TODO EL PAÍS A PARTIR DE $9.999 - 3,6 y 12 CUOTAS SIN INTERÉS</p>
+    <footer class="py-3 bg-black text-center text-white container-fluid">
+        <div class="mb-3">
+        <a class="text-deco" href="https://facebook.com" target="_blank">
+        <img id="redes" src="../img/logo-facebook.png" alt="logotipo de facebook" />
+        </a>
+        <a id="redes" href="https://instagram.com" target="_blank">
+        <img id="redes" src="../img/logo-insta.png" alt="logotipo de instagram" />
+        </a>
         </div>
         
-        <main id="main" class="containerContact">
-            <div class="marginBottom">
-
-                <h1 class="textDark contactTitle">CONTACTO</h1>
-            <div class="contact-wrapper animated bounceInUp">
-                
-                <div class="contact-form gradiente">
-                    <h3 class="titleTable">Escribinos</h3>
-                    <form action="">
-                        <p>
-                            <label>Nombre:</label>
-                            <input type="text" name="nombre">
-                        </p>
-                        <p>
-                            <label>Correo electrónico:</label>
-                            <input type="email" name="email">
-                        </p>
-                        <p class="block">
-                            <label>Dejanos tu mensaje:</label> 
-                            <textarea name="mensaje" rows="1"></textarea>
-                        </p>
-                        <p class="block">
-                            <button class="transformacion">
-                                Enviar
-                            </button>
-                        </p>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h4>Más información:</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Alto Avellaneda - LOCAL 10</li>
-                        <li><i class="fas fa-phone"></i> (011) 4222-2222</li>
-                        <li><i class="fas fa-envelope-open-text"></i> info@casacashop.com.ar</li>
-                    </ul>
-                </div>
-            </div>
-    
-        </div>
-    
-        </main>
-
-        <footer id="footer"class="bgDark marginTop boxFooter">
-            <div>
-            <a  class="textDeco" href="https://facebook.com" target="_blank">
-            <img class="iconSize" class="iconSize" src="../img/logo-facebook.png" alt="logotipo de facebook" />
-            </a>
-            <a href="https://instagram.com" target="_blank">
-            <img class="iconSize" src="../img/logo-insta.png" alt="logotipo de instagram" />
-            </a>
-            </div>
-
-            <h6 class="textWhite" id="textFooter"> GRAL. GÜEMES 897 (ALTO AVELLANEDA) - LOCAL 10 - LUNES A VIERNES DE 10 A 20 HORAS. TEL:4222-2222
-            </h6>
+        <h6 class="text-white">
+        GRAL. GÜEMES 897 (ALTO AVELLANEDA) - LOCAL 10 - LUNES A VIERNES DE 10 A
+        20 HORAS. TEL:4222-2222
+        </h6>        
         </footer>
-        
+
+        <!-- JS - bootstrap.min.js -->
+<script src="../js/bootstrap.min.js"></script>
+
     </body>
 </html>
