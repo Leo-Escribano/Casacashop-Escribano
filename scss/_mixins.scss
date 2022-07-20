@@ -18,6 +18,7 @@
 }
 
 
+
 //mixin
 
 @mixin texto($size, $interlineado, $color){
@@ -28,7 +29,8 @@
 }
 
 h6{
-    @include texto($textSm, 2em, white)
+    @include texto($textSm, 2em, white);
+    font-weight: $bold
 }
 
 //map
