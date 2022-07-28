@@ -50,9 +50,9 @@
                 <a class="nav-link text-black" href="../views/contacto.html">CONTACTO</a>
                 </li>
             </ul>
-            <form class="d-flex me-auto" role="search">
+            <form action="datos.php" class="d-flex me-auto" role="search">
                 <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                <button class="btn-buscar" type="submit">BUSCAR</button>
             </form>
             </div>
         </div>
@@ -73,17 +73,96 @@
     <main class="bg-dark mt-2">
         <div class="tituloMujeres"> ÚLTIMOS LANZAMIENTOS</div>
         <div class="row m-3">
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/bayern-new.jpg" alt="camiseta adulto bayern"><p class="mt-2 text-white text-center">BAYERN MÜNICH 22-23</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/manutd-new.jpg" alt="camiseta adulto man united"><p class="mt-2 text-white text-center">MANCHESTER UNITED 22-23</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/barca-new.jpg" alt="camiseta adulto barcelona fc"><p class="mt-2 text-white text-center">F.C. BARCELONA 22-23</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5 " src="../img/psg-new.jpg" alt="camiseta psg messi"><p class="mt-2 text-white text-center">PARIS SAINT-GERMAIN 22-23</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/city-new.jpg" alt="camiseta adulto porto"><p class="mt-2 text-white text-center">PORTO 22-23</p><p class="mt-2 text-white text-center">PRECIO: $17.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/celta-new.jpg" alt="camiseta adulto celta negra"><p class="mt-2 text-white text-center">CELTA DE VIGO 22-23 (3RD KIT)</p><p class="mt-2 text-white text-center">PRECIO: $16.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/olm-new.jpg" alt="camiseta adulto marsella"><p class="mt-2 text-white text-center">OL. MARSELLA 22-23 (3RD KIT)</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/rangers-new.jpg" alt="camiseta adulto rangers"><p class="mt-2 text-white text-center">RANGERS 22-23</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p></article>
 
-    
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/bayern-new.jpg" alt="camiseta adulto bayern"><p class="mt-2 text-white text-center">BAYERN MÜNICH 22-23</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+            </article>
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/manutd-new.jpg" alt="camiseta adulto man united"><p class="mt-2 text-white text-center">MANCHESTER UNITED 22-23</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+            </article>
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/barca-new.jpg" alt="camiseta adulto barcelona fc"><p class="mt-2 text-white text-center">F.C. BARCELONA 22-23</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+            </article>
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5 " src="../img/psg-new.jpg" alt="camiseta psg messi"><p class="mt-2 text-white text-center">PARIS SAINT-GERMAIN 22-23</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+            </article>
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/city-new.jpg" alt="camiseta adulto porto"><p class="mt-2 text-white text-center">PORTO 22-23</p><p class="mt-2 text-white text-center">PRECIO: $17.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+            </article>
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/celta-new.jpg" alt="camiseta adulto celta negra"><p class="mt-2 text-white text-center">CELTA DE VIGO 22-23 (3RD KIT)</p><p class="mt-2 text-white text-center">PRECIO: $16.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+            </article>
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/olm-new.jpg" alt="camiseta adulto marsella"><p class="mt-2 text-white text-center">OL. MARSELLA 22-23 (3RD KIT)</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
         </article>
+
+
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/rangers-new.jpg" alt="camiseta adulto rangers"><p class="mt-2 text-white text-center">RANGERS 22-23</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p>
+                
+                <!-- INICIA BOTÓN COMPRAR -->
+                <div class="mb-3 text-center">
+                    <form action="datos.php" role="search">
+                        <button class="px-3" id="btn-comprar" type="submit">COMPRAR</button>
+                    </form>
+                </div>
+            <!-- TERMINA BOTÓN COMPRAR -->   
+        </article>
+
     </div>
 
     </main>

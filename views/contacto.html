@@ -49,9 +49,9 @@
             <a class="nav-link text-black" href="../views/contacto.html">CONTACTO</a>
             </li>
         </ul>
-        <form class="d-flex me-auto" role="search">
+        <form action="datos.php" class="d-flex me-auto" role="search">
             <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+            <button class="btn-buscar" type="submit">BUSCAR</button>
         </form>
         </div>
     </div>
@@ -70,11 +70,12 @@
     </header>
         
     <main class="bg-light">
-        <div class="tituloContacto"> CONTACTO</div>
+        <div class="tituloContacto">CONTACTO</div>
     <div class="row mx-5 mb-5 border border-3 border-dark rounded-3 p-4">
         <div class="mb-3">
+            <form action="datos.php">
             <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-            <input type="text" class="form-control border border-1 border-dark rounded-1" placeholder="">
+            <input type="text" class="form-control border border-1 border-dark rounded-1" placeholder="nombre">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
@@ -85,7 +86,8 @@
             <textarea class="form-control border border-1 border-dark rounded-1" rows="3"></textarea>
         </div>
         <div class="col-auto">
-            <button class="btn btn-outline-success" type="submit">Enviar</button>
+            <form action="datos.php" role="send"><button class="btn-buscar px-3 py-2" type="submit">ENVIAR</button>
+        </form>
         </div>
     </div>
 

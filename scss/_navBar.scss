@@ -1,3 +1,20 @@
+
+.btn-buscar{
+    background-color: $mainColor;
+    color: $keyColor;
+    border: 2px solid $keyColor;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding-right: 8px;
+    padding-left: 8px;
+&:hover {
+    background-color: $keyColor;
+    color: $mainColor;
+    border: 2px solid $keyColor;
+}
+}
+
 #botonera{
     animation-name: textAlpha;
     animation-duration: 4s;

@@ -49,9 +49,9 @@
                 <a class="nav-link text-black" href="../views/contacto.html">CONTACTO</a>
                 </li>
             </ul>
-            <form class="d-flex me-auto" role="search">
+            <form action="datos.php" class="d-flex me-auto" role="search">
                 <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                <button class="btn-buscar" type="submit">BUSCAR</button>
             </form>
             </div>
         </div>
@@ -72,14 +72,14 @@
     <main class="bg-dark mt-2">
         <div class="tituloMujeres">CAMISETAS PARA NIÑOS</div>
         <div class="row m-3">
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/indep.jpg" alt="camiseta niño independiente"><p class="mt-2 text-white text-center">INDEPENDIENTE</p><p class="mt-2 text-white text-center">PRECIO: $4.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/racing.jpg" alt="camiseta niño racing"><p class="mt-2 text-white text-center">RACING CLUB</p><p class="mt-2 text-white text-center">PRECIO: $4.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/river.jpg" alt="camiseta niño river"><p class="mt-2 text-white text-center">RIVER PLATE</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5 " src="../img/boca.jpg" alt="camiseta niño boca"><p class="mt-2 text-white text-center">BOCA JUNIORS</p><p class="mt-2 text-white text-center">PRECIO: $2.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/sanlo.jpg" alt="camiseta niño san lorenzo"><p class="mt-2 text-white text-center">SAN LORENZO</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/psg.jpg" alt="camiseta niño psg"><p class="mt-2 text-white text-center">PARIS SAINT-GERMAIN</p><p class="mt-2 text-white text-center">PRECIO: $5.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/realmad.jpg" alt="camiseta niño real madrid"><p class="mt-2 text-white text-center">REAL MADRID</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/barca.jpg" alt="camiseta niño barcelona"><p class="mt-2 text-white text-center">F.C. BARCELONA</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/indep.jpg" alt="camiseta niño independiente"><p class="mt-2 text-white text-center">INDEPENDIENTE</p><p class="mt-2 text-white text-center">PRECIO: $4.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/racing.jpg" alt="camiseta niño racing"><p class="mt-2 text-white text-center">RACING CLUB</p><p class="mt-2 text-white text-center">PRECIO: $4.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/river.jpg" alt="camiseta niño river"><p class="mt-2 text-white text-center">RIVER PLATE</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5 " src="../img/boca.jpg" alt="camiseta niño boca"><p class="mt-2 text-white text-center">BOCA JUNIORS</p><p class="mt-2 text-white text-center">PRECIO: $2.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/sanlo.jpg" alt="camiseta niño san lorenzo"><p class="mt-2 text-white text-center">SAN LORENZO</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/psg.jpg" alt="camiseta niño psg"><p class="mt-2 text-white text-center">PARIS SAINT-GERMAIN</p><p class="mt-2 text-white text-center">PRECIO: $5.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/realmad.jpg" alt="camiseta niño real madrid"><p class="mt-2 text-white text-center">REAL MADRID</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="transformacion w-100 rounded-5" src="../img/barca.jpg" alt="camiseta niño barcelona"><p class="mt-2 text-white text-center">F.C. BARCELONA</p><p class="mt-2 text-white text-center">PRECIO: $3.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
 
     
         </article>

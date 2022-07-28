@@ -1,7 +1,6 @@
 {
   "name": "repo_1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/Leo-Escribano/Casacashop-Escribano/issues"
   },
-  "homepage": "https://github.com/Leo-Escribano/Casacashop-Escribano#readme"
+  "homepage": "https://github.com/Leo-Escribano/Casacashop-Escribano#readme",
+  "description": ""
 }

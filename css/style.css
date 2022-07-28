@@ -22,6 +22,20 @@ h6 {
 .bg-black {
   background-color: black; }
 
+.btn-buscar {
+  background-color: white;
+  color: #027333;
+  border: 2px solid #027333;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding-right: 8px;
+  padding-left: 8px; }
+  .btn-buscar:hover {
+    background-color: #027333;
+    color: white;
+    border: 2px solid #027333; }
+
 #botonera {
   animation-name: textAlpha;
   animation-duration: 4s; }
@@ -64,6 +78,20 @@ h6 {
 #font-titles {
   font-size: 20px;
   font-weight: 600; }
+
+#btn-comprar {
+  background-color: #343232;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 4px;
+  margin-bottom: 5px; }
+  #btn-comprar:hover {
+    background-color: red;
+    color: white;
+    border: 2px solid red; }
 
 h1 {
   font-size: 20px; }

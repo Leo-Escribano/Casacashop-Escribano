@@ -49,9 +49,9 @@
                 <a class="nav-link text-black" href="../views/contacto.html">CONTACTO</a>
                 </li>
             </ul>
-            <form class="d-flex me-auto" role="search">
+            <form action="datos.php" class="d-flex me-auto" role="search">
                 <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                <button class="btn-buscar" type="submit">BUSCAR</button>
             </form>
             </div>
         </div>
@@ -72,14 +72,14 @@
     <main class="bg-dark mt-2">
         <div class="tituloMujeres">CAMISETAS CLÁSICAS RETRO</div>
         <div class="row m-3">
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/pbajos-retro.jpg" alt="camiseta retro países bajos"><p class="mt-2 text-white text-center">SELECCIÓN HOLANDA 1994</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/arg-retro.jpg" alt="camiseta retro argentina"><p class="mt-2 text-white text-center">SELECCIÓN ARGENTINA 1978</p><p class="mt-2 text-white text-center">PRECIO: $15.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/chelsea-retro.jpg" alt="camiseta retro chelsea"><p class="mt-2 text-white text-center">CHELSEA 1996-97</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5 " src="../img/indep-retro.png" alt="camiseta retro bochini"><p class="mt-2 text-white text-center">INDEPENDIENTE 1984</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/fiore-retro.jpg" alt="camiseta retro batistuta"><p class="mt-2 text-white text-center">FIORENTINA 1998</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/ingla-retro.jpg" alt="camiseta retro inglaterra"><p class="mt-2 text-white text-center">SELECCIÓN INGLATERRA 1992</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/napoli-retro.jpg" alt="camiseta retro maradona"><p class="mt-2 text-white text-center">NAPOLI 1988</p><p class="mt-2 text-white text-center">PRECIO: $5.999</p></article>
-            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/unionsov-retro.jpg" alt="camiseta retro cccp"><p class="mt-2 text-white text-center">SELECCIÓN UNIÓN SOVIÉTICA 1982</p><p class="mt-2 text-white text-center">PRECIO: $11.999</p></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/pbajos-retro.jpg" alt="camiseta retro países bajos"><p class="mt-2 text-white text-center">SELECCIÓN HOLANDA 1994</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/arg-retro.jpg" alt="camiseta retro argentina"><p class="mt-2 text-white text-center">SELECCIÓN ARGENTINA 1978</p><p class="mt-2 text-white text-center">PRECIO: $15.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/chelsea-retro.jpg" alt="camiseta retro chelsea"><p class="mt-2 text-white text-center">CHELSEA 1996-97</p><p class="mt-2 text-white text-center">PRECIO: $22.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5 " src="../img/indep-retro.png" alt="camiseta retro bochini"><p class="mt-2 text-white text-center">INDEPENDIENTE 1984</p><p class="mt-2 text-white text-center">PRECIO: $19.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/fiore-retro.jpg" alt="camiseta retro batistuta"><p class="mt-2 text-white text-center">FIORENTINA 1998</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/ingla-retro.jpg" alt="camiseta retro inglaterra"><p class="mt-2 text-white text-center">SELECCIÓN INGLATERRA 1992</p><p class="mt-2 text-white text-center">PRECIO: $12.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/napoli-retro.jpg" alt="camiseta retro maradona"><p class="mt-2 text-white text-center">NAPOLI 1988</p><p class="mt-2 text-white text-center">PRECIO: $5.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
+            <article class=" col-sm-12 col-md-6 col-lg-3"> <img class="w-100 rounded-5" src="../img/unionsov-retro.jpg" alt="camiseta retro cccp"><p class="mt-2 text-white text-center">SELECCIÓN UNIÓN SOVIÉTICA 1982</p><p class="mt-2 text-white text-center">PRECIO: $11.999</p><div class="text-center mb-3"><button class="px-3" id="btn-comprar" type="submit">COMPRAR</div></article>
 
     
         </article>
